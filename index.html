@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yusuf Market - Ana Sayfa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Yusuf Market</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Ana Sayfa</a></li>
+        <li><a href="pages/urunler.html">Ürünler</a></li>
+        <li>
+          <a href="pages/sepet.html" class="cart-link">
+            Sepet <span id="cartBadge"></span>
+          </a>
+        </li>
+        <li><a href="pages/iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Ana sayfa hero alani -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Modern ve Şık E-Ticaret Deneyimi</h1>
+        <p>Futbol formalarını keşfet, sepetine ekle ve kolayca sipariş ver. Mobil uyumlu ve kullanımı kolay.</p>
+        <a href="pages/urunler.html" class="button">Ürünlere Göz At</a>
+      </div>
+      <div class="hero-image">
+        <img src="img/dort1.jpg" alt="Futbol Forması">
+      </div>
+    </section>
+
+    <!-- Hizli bilgi kartlari -->
+    <section class="info-cards">
+      <article class="info-card">
+        <h2>Kolay Kullanım</h2>
+        <p>Basit arayüz sayesinde ürünleri hemen inceleyebilirsin.</p>
+      </article>
+      <article class="info-card">
+        <h2>Hızlı Teslimat</h2>
+        <p>Hazırlanan siparişler hızlıca kargoya verilir.</p>
+      </article>
+      <article class="info-card">
+        <h2>Güvenli Ödeme</h2>
+        <p>Sepet sayfasında istenilen ödeme bilgilerini güvenle kullan.</p>
+      </article>
+    </section>
+
+    <!-- One cikan urunler - grid ile -->
+    <section class="featured-products">
+      <h2>Öne Çıkan Ürünler</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="img/dort1.jpg" alt="Dortmund Forması">
+          <h3>Borussia Dortmund Forması</h3>
+          <p>Resmi Dortmund forması - Siyah ve sarı renk kombinasyonu.</p>
+          <div class="btn-group">
+            <a href="pages/dortmund-siyah-detay.html" class="button small-button">Detay</a>
+            <button class="button small-button add-to-cart-btn" data-product-name="Dortmund Siyah Forması" data-price="499">Sepete Ekle</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="img/fener1.jpg" alt="Fenerbahçe Forması">
+          <h3>Fenerbahçe Forması</h3>
+          <p>Resmi Fenerbahçe forması - Sarı ve mavi tasarım.</p>
+          <div class="btn-group">
+            <a href="pages/fener-resmi-detay.html" class="button small-button">Detay</a>
+            <button class="button small-button add-to-cart-btn" data-product-name="Fenerbahçe Resmi Forması" data-price="599">Sepete Ekle</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="img/düzce1.jpg" alt="Düzce Forması">
+          <h3>Düzce Spor Forması</h3>
+          <p>Düzce Spor resmi forması - Kaliteli kumaş.</p>
+          <div class="btn-group">
+            <a href="pages/duzce-detay.html" class="button small-button">Detay</a>
+            <button class="button small-button add-to-cart-btn" data-product-name="Düzce Spor Forması" data-price="429">Sepete Ekle</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Yusuf Market &copy; 2026</p>
+      <ul class="footer-menu">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="pages/iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/myscript.js"></script>
+</body>
+</html>

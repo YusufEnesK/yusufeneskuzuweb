@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim - Yusuf Market</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Yusuf Market</a>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="urunler.html">Ürünler</a></li>
+        <li>
+          <a href="sepet.html" class="cart-link">
+            Sepet <span id="cartBadge"></span>
+          </a>
+        </li>
+        <li><a href="iletisim.html" class="active">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Bize Ulaşın</h1>
+    <section class="page-content">
+      <div class="product-detail">
+
+        <!-- Iletisim formu -->
+        <div>
+          <form class="quiz-card" id="contactForm">
+            <h3>Mesaj Gönder</h3>
+            <div class="form-group">
+              <label for="fullName">Ad Soyad</label>
+              <input type="text" id="fullName" placeholder="Adınızı girin" required>
+            </div>
+            <div class="form-group">
+              <label for="emailAddress">E-posta</label>
+              <input type="email" id="emailAddress" placeholder="E-posta adresinizi girin" required>
+            </div>
+            <div class="form-group">
+              <label for="messageText">Mesajınız</label>
+              <textarea id="messageText" placeholder="Mesajınızı yazın" required></textarea>
+            </div>
+            <button type="submit" class="button">Gönder</button>
+          </form>
+        </div>
+
+        <!-- JavaScript quiz bolumu: dogru cevap indirim kodu kazandirir -->
+        <div class="quiz-card">
+          <h3>🎯 Mini Quiz — İndirim Kazan!</h3>
+          <p>Aşağıdaki soruyu doğru yanıtlarsan <strong>10 TL indirim kodu</strong> kazanırsın.</p>
+          <p style="margin-top:12px;"><strong>Soru:</strong> HTML'de bir sayfanın en önemli başlık etiketi hangisidir?</p>
+          <div class="form-group" style="margin-top:14px;">
+            <label for="quizAnswer">Cevabınız:</label>
+            <input type="text" id="quizAnswer" placeholder="Etiket adını yazın (örn: h1)">
+          </div>
+          <div class="quiz-buttons">
+            <button id="checkQuiz" class="button">Cevapla</button>
+          </div>
+          <p id="quizResult" class="quiz-result"></p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Yusuf Market &copy; 2026</p>
+      <ul class="footer-menu">
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="urunler.html">Ürünler</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="../js/myscript.js"></script>
+</body>
+</html>

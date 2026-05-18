@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sepet - Yusuf Market</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Yusuf Market</a>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="urunler.html">Ürünler</a></li>
+        <li>
+          <a href="sepet.html" class="cart-link active">
+            Sepet <span id="cartBadge"></span>
+          </a>
+        </li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Sepetiniz</h1>
+    <section class="page-content">
+      <!-- Sepet tablosu: JavaScript ile doldurulur, bos baslar -->
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Ürün</th>
+            <th>Adet</th>
+            <th>Birim Fiyat</th>
+            <th>Toplam</th>
+            <th>İşlem</th>
+          </tr>
+        </thead>
+        <tbody id="cartItems">
+          <!-- JavaScript ile doldurulacak -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <div>
+          <button id="clearCart" class="button" style="background-color:#ef4444;">Sepeti Temizle</button>
+        </div>
+        <p><strong>Genel Toplam:</strong> <span id="cartTotal">0 TL</span></p>
+      </div>
+
+      <!-- Indirim kodu bolumu -->
+      <div class="coupon-card" style="margin-top:24px;">
+        <h3>İndirim Kodu</h3>
+        <p>İletişim sayfasındaki quiz'i çözerek indirim kodu kazan!</p>
+        <div class="coupon-actions">
+          <input type="text" id="couponCode" placeholder="İndirim kodunu girin">
+          <button id="applyCoupon" class="button">Uygula</button>
+        </div>
+        <p id="couponMessage" class="coupon-message"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Yusuf Market &copy; 2026</p>
+      <ul class="footer-menu">
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="../js/myscript.js"></script>
+</body>
+</html>
