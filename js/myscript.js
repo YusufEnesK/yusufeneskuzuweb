@@ -277,6 +277,19 @@ document.addEventListener('DOMContentLoaded', function () {
       showToast('Sepet temizlendi.');
     });
   }
+
+  // Siparişi onayla butonu
+  var confirmBtn = document.getElementById('confirmOrder');
+  if (confirmBtn) {
+    confirmBtn.addEventListener('click', function () {
+      var cartItems = getCartItems();
+      if (cartItems.length === 0) {
+        showToast('Sepetiniz boş, onaylanacak sipariş yok.');
+        return;
+      }
+      alert('Sipariş verme işlemi şu anlık gerçekleştirilememektedir.');
+    });
+  }
 });
 
 // ================================================================
