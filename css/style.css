@@ -50,6 +50,58 @@ button, input, textarea {
   align-items: center;
 }
 
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #222;
+  --primary-color: #3b82f6;
+  --secondary-color: #1e293b;
+  --card-color: #ffffff;
+  --border-color: #d1d5db;
+  --radius: 12px;
+}
+
+/* Genel sayfa sıfırlama */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+.site-header {
+  background-color: var(--card-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   font-size: 1.4rem;
   font-weight: bold;
@@ -59,6 +111,7 @@ button, input, textarea {
 .nav-menu {
   display: flex;
   gap: 18px;
+  list-style: none;
 }
 
 .nav-menu a {
@@ -88,6 +141,13 @@ button, input, textarea {
 .hero-content p {
   max-width: 540px;
   margin-bottom: 22px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius);
 }
 
 .button {
@@ -216,6 +276,9 @@ button.button:hover {
 .footer-menu {
   display: flex;
   gap: 16px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-menu a {
@@ -344,6 +407,15 @@ button.button:hover {
   flex-wrap: wrap;
 }
 
+.coupon-actions input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.coupon-actions button {
+  white-space: nowrap;
+}
+
 .quiz-buttons button,
 .coupon-actions button,
 .quiz-buttons .button,
@@ -386,13 +458,15 @@ button.button:hover {
 @media (max-width: 700px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 16px;
   }
 
   .nav-menu {
     flex-direction: column;
     gap: 12px;
     width: 100%;
+    align-items: center;
   }
 
   .info-cards,
@@ -403,6 +477,25 @@ button.button:hover {
   .product-grid,
   .product-list {
     grid-template-columns: 1fr;
+  }
+  
+  .cart-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .product-card .btn-group {
+    flex-direction: column !important;
+  }
+  
+  .product-card .btn-group > a,
+  .product-card .btn-group > button {
+    width: 100% !important;
+  }
+  
+  .product-detail {
+    padding: 16px;
   }
 }
 
