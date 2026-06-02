@@ -615,3 +615,13 @@ button.button:hover {
   color: var(--primary-color);
   font-weight: 600;
 }
+
+/* Inline styles replacements */
+.mt-24 { margin-top: 24px; }
+.mt-14 { margin-top: 14px; }
+.mt-12 { margin-top: 12px; }
+.mt-8 { margin-top: 8px; }
+.text-primary { color: var(--primary-color); }
+.flex-gap-12-wrap { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-danger { background-color: #ef4444; }
+.btn-success { background-color: #10b981; }
